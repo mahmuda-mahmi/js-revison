@@ -1,3 +1,4 @@
+/*
 console.log("Hello, World!");
 
 let day;
@@ -41,3 +42,64 @@ switch (date2) {
 }
 
 console.log(text);
+
+let text2 = "";
+let i = 0;
+while (i < 10) {
+  text2 += "The number is " + i + "\n";
+  i++;
+}console.log(text2);
+
+
+let text3 = "";
+do {
+  text3 += "The number is " + i + "\n";
+  i++;
+}
+while (i < 10);
+console.log(text3);
+
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+let i = 0;
+let text4 = "";
+for (;cars[i];) {
+  text4 += cars[i] + "<br>";
+  i++;
+}
+document.getElementById("demo").innerHTML = text4;
+
+
+let text = " ";
+
+loop1: for(let j = 1; j < 5; j++) {
+    loop2: for (let i = 1; i < 5; i++){
+        if(i=== 3) { break loop1;}
+        text += i + "<br>";
+    }
+}
+console.log(text);
+*/
+
+let text = " ";
+
+loop1: for (let j = 1; j < 5; j++) {
+    loop2: for(let i = 1; i < 5; i++) {
+        if(i=== 3) { continue loop2;}
+        text += i + "<br>";
+    }
+}
+
+document.getElementById("demo").innerHTML = text;
+
+
+
+let x, y, z;
+
+function  sum(x, y) {
+    z = x + y;
+    return z;
+}
+
+console.log(sum(4, 6));
