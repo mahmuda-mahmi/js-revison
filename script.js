@@ -80,7 +80,6 @@ loop1: for(let j = 1; j < 5; j++) {
     }
 }
 console.log(text);
-*/
 
 let text = " ";
 
@@ -94,7 +93,6 @@ loop1: for (let j = 1; j < 5; j++) {
 document.getElementById("demo").innerHTML = text;
 
 
-
 let x, y, z;
 
 function  sum(x, y) {
@@ -103,3 +101,30 @@ function  sum(x, y) {
 }
 
 console.log(sum(4, 6));
+
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate");
+document.getElementById("demo").innerHTML = index;
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll(/Cats/gi);
+
+document.getElementById("demo").innerHTML = Array.from(iterator);
+
+*/
+
+function isPangram(string){
+  //...
+  string = string.toLowerCase();
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  for (let letter of alphabet) {
+    if (!string.includes(letter)){
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isPangram("The quick brown fox jumps over the lazy dog"));
+
