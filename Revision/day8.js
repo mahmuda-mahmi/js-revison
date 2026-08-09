@@ -53,10 +53,6 @@ else {
 }
 
 
-
-*/
-
-
 let height = prompt("Enter the height:");
 let width = prompt("Enter the width:");
 
@@ -64,3 +60,25 @@ let width = prompt("Enter the width:");
 let area = (height ?? 100) * (width ?? 50);
 
 alert(area); // 5000
+
+
+
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+*/
+
+
+function min(a, b){
+  if(a < b){
+    return a + "is minimum";
+  }
+  else{
+    return b + "is minimum";
+  }
+}
+
+min(2, 5) // 2is minimum
+min(3, -1) // -1is minimum
+min(1, 1)  // 1is minimum
